@@ -1,0 +1,13 @@
+{
+    "name": "@swis/filament-backgrounds",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "postcss resources/css/index.css > resources/dist/filament-backgrounds.css"
+    },
+    "devDependencies": {
+        "cssnano": "^6.0.1",
+        "postcss": "^8.4.31",
+        "postcss-cli": "^10.1.0"
+    }
+}
