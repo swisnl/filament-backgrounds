@@ -16,4 +16,12 @@ class TestCase extends Orchestra
             FilamentBackgroundsServiceProvider::class,
         ];
     }
+
+    /**
+     * @param  \Illuminate\Foundation\Application  $app
+     */
+    protected function defineEnvironment($app): void
+    {
+        $app->usePublicPath(__DIR__ . '/../workbench/public/');
+    }
 }

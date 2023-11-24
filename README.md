@@ -57,9 +57,9 @@ public function panel(Panel $panel): Panel
 }
 ```
 
-### Custom image provider
+### Use your own images
 
-You can use a different image provider by passing an instance of `ProvidesImages` to the `imageProvider` method on the plugin.
+You can use your own images by passing an instance of `MyImages` to the `imageProvider` method on the plugin. This provider allows you to specify a directory (inside your public directory) where your images are stored. The images will be randomly picked from this directory. You can also specify a cache time in seconds, so the images are not picked on every request.
 
 ```php
 use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
@@ -69,12 +69,16 @@ public function panel(Panel $panel): Panel
     return $panel
         ->plugins([
             FilamentBackgroundsPlugin::make()
-                ->imageProvider(MyImageProvider::make()),
+                ->imageProvider(
+                    MyImages::make()
+                        ->directory('images/backgrounds')
+                        ->remember(900)
+                ),
         ])
 }
 ```
 
-#### Writing a custom image provider
+### Writing a custom image provider
 
 To create your own image provider, you need to implement the `ProvidesImages` interface. This interface has one method, `getImage`, which should return an `Image` object. The image object takes two arguments, the first is the CSS `background-image` property, the second is the attribution text. The image will be directly used as background-image in CSS, so it should include `url()`, which allows you to even use gradients or other fancy stuff!
 
