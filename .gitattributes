@@ -8,6 +8,7 @@
 /.idea                  export-ignore
 /.editorconfig          export-ignore
 /.vscode                export-ignore
+/.ddev                  export-ignore
 /art                    export-ignore
 /docs                   export-ignore
 /images                 export-ignore
