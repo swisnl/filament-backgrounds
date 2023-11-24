@@ -94,7 +94,7 @@ class MyImageProvider implements ProvidesImages
     public function getImage(): Image
     {
         return new Image(
-            "url('[link to photo]')",
+            'url("[link to photo]")',
             'Photo by ...'
         );
     }

@@ -9,5 +9,5 @@ it('returns an image based on the day of the month', function () {
     $provider = CuratedBySwis::make();
     $image = $provider->getImage();
 
-    expect($image->image)->toEqual("url('http://localhost/images/swisnl/filament-backgrounds/curated-by-swis/24.jpg')");
+    expect($image->image)->toEqual('url("http://localhost/images/swisnl/filament-backgrounds/curated-by-swis/24.jpg")');
 });

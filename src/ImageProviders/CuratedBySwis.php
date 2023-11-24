@@ -139,7 +139,7 @@ class CuratedBySwis implements ProvidesImages
         $image = self::IMAGES[now()->format('j') - 1];
 
         return new Image(
-            "url('" . asset('images/swisnl/filament-backgrounds/curated-by-swis/' . $image['url']) . "')",
+            'url("' . asset('images/swisnl/filament-backgrounds/curated-by-swis/' . $image['url']) . '")',
             array_key_exists('author', $image) ? __('Photo by :author', ['author' => $image['author']]) : null
         );
     }
