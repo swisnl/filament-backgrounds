@@ -30,7 +30,10 @@ class MyImages implements ProvidesImages
         }
 
         $images = app(Filesystem::class)->files(public_path($this->directory));
-        $image = Str::replaceStart(public_path(), '', $images[array_rand($images)]->getPathname());
+        $image = Str::of($images[array_rand($images)]->getPathname())
+            ->replaceStart(public_path(), '')
+            ->replace(DIRECTORY_SEPARATOR, '/')
+            ->toString();
 
         return new Image(
             'url("' . asset($image) . '")'
