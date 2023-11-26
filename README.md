@@ -8,7 +8,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/swisnl/filament-backgrounds.svg?style=flat-square)](https://packagist.org/packages/swisnl/filament-backgrounds)
 [![Made by SWIS](https://img.shields.io/badge/%F0%9F%9A%80-made%20by%20SWIS-%230737A9.svg?style=flat-square)](https://www.swis.nl)
 
-A [curated list of (free to use) images](resources/images/curated-by-swis), mostly from [Unsplash](https://unsplash.com/), to give your Filament auth pages a unique look. Rather use your own images? No problem, you can also use your own images. Or go wild and create your own image provider based on the weather, time of day, or whatever you can think of!
+A [curated list of (free to use) images](resources/images/curated-by-swis), to give your Filament auth pages a unique look. Rather use your own images? No problem, you can also use your own images. Or go wild and create your own image provider based on the weather, time of day, or whatever you can think of!
 
 ## Installation
 
@@ -42,7 +42,7 @@ public function panel(Panel $panel): Panel
 
 ### Hide attribution
 
-You can disable attribution by passing `false` to the `showAttribution` method on the plugin.
+You can disable attribution by passing `false` to the `showAttribution` method on the plugin. Please note that this is not recommended, and sometimes prohibited, as the photographers deserve credit for their work, or the license requires you to show the attribution!
 
 ```php
 use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
@@ -131,6 +131,12 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+All images included in this package are free to use for commercial and noncommercial purposes and come from multiple sources:
+* [Flickr](https://www.flickr.com/)
+* [Pexels](https://www.pexels.com/)
+* [PxHere](https://pxhere.com/)
+* [Unsplash](https://unsplash.com/)
 
 ## SWIS :heart: Open Source
 
