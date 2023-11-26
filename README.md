@@ -57,9 +57,26 @@ public function panel(Panel $panel): Panel
 }
 ```
 
+### Remember
+
+You can specify a cache time in seconds using the `remember` method on the plugin. This is especially useful if you use an image provider that uses an API or other external source, so you don't hit the API on every request!
+
+```php
+use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
+ 
+public function panel(Panel $panel): Panel
+{
+    return $panel
+        ->plugins([
+            FilamentBackgroundsPlugin::make()
+                ->remember(900),
+        ])
+}
+```
+
 ### Use your own images
 
-You can use your own images by passing an instance of `MyImages` to the `imageProvider` method on the plugin. This provider allows you to specify a directory (inside your public directory) where your images are stored. The images will be randomly picked from this directory. You can also specify a cache time in seconds, so the images are not picked on every request.
+You can use your own images by passing an instance of `MyImages` to the `imageProvider` method on the plugin. This provider allows you to specify a directory (inside your public directory) where your images are stored. The images will be randomly picked from this directory.
 
 ```php
 use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
@@ -72,7 +89,6 @@ public function panel(Panel $panel): Panel
                 ->imageProvider(
                     MyImages::make()
                         ->directory('images/backgrounds')
-                        ->remember(900)
                 ),
         ])
 }
@@ -104,6 +120,8 @@ class MyImageProvider implements ProvidesImages
     }
 }
 ```
+
+N.B. Make sure you [cache the result](#remember) if you use an API or other external sources, so you don't hit the API on every request!
 
 ## Testing
 

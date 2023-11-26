@@ -6,6 +6,7 @@ use Filament\Contracts\Plugin;
 use Filament\Panel;
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\HtmlString;
 use Swis\Filament\Backgrounds\Contracts\ProvidesImages;
 use Swis\Filament\Backgrounds\ImageProviders\CuratedBySwis;
@@ -13,6 +14,8 @@ use Swis\Filament\Backgrounds\ImageProviders\CuratedBySwis;
 class FilamentBackgroundsPlugin implements Plugin
 {
     protected ProvidesImages $imageProvider;
+
+    protected \DateInterval | \DateTimeInterface | int $ttl = 0;
 
     protected bool $showAttribution = true;
 
@@ -71,7 +74,7 @@ class FilamentBackgroundsPlugin implements Plugin
      */
     protected function getCssVariables(): array
     {
-        $image = $this->getImageProvider()->getImage();
+        $image = $this->getImage();
 
         return array_filter([
             'filament-backgrounds-image' => new HtmlString($image->image),
@@ -80,19 +83,30 @@ class FilamentBackgroundsPlugin implements Plugin
         ]);
     }
 
-    public function imageProvider(ProvidesImages $imageProvider): self
+    protected function getImage(): Image
+    {
+        return Cache::remember(
+            'filament-backgrounds:image',
+            $this->ttl,
+            fn () => ($this->imageProvider ?? CuratedBySwis::make())->getImage()
+        );
+    }
+
+    public function imageProvider(ProvidesImages $imageProvider): static
     {
         $this->imageProvider = $imageProvider;
 
         return $this;
     }
 
-    public function getImageProvider(): ProvidesImages
+    public function remember(\DateInterval | \DateTimeInterface | int $ttl): static
     {
-        return $this->imageProvider ?? CuratedBySwis::make();
+        $this->ttl = $ttl;
+
+        return $this;
     }
 
-    public function showAttribution(bool $showAttribution): self
+    public function showAttribution(bool $showAttribution): static
     {
         $this->showAttribution = $showAttribution;
 
