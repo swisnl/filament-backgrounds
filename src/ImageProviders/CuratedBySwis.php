@@ -54,6 +54,7 @@ class CuratedBySwis implements ProvidesImages
         ],
         [
             'url' => '12.jpg',
+            'author' => 'unknown on Unsplash',
         ],
         [
             'url' => '13.jpg',
@@ -65,6 +66,7 @@ class CuratedBySwis implements ProvidesImages
         ],
         [
             'url' => '15.jpg',
+            'author' => 'Martin Fisch on Flickr',
         ],
         [
             'url' => '16.jpg',
@@ -100,6 +102,7 @@ class CuratedBySwis implements ProvidesImages
         ],
         [
             'url' => '24.jpg',
+            'author' => 'Negative Space on Pexels',
         ],
         [
             'url' => '25.jpg',
@@ -115,9 +118,11 @@ class CuratedBySwis implements ProvidesImages
         ],
         [
             'url' => '28.jpg',
+            'author' => 'unknown on Unsplash',
         ],
         [
             'url' => '29.jpg',
+            'author' => 'unknown on PxHere',
         ],
         [
             'url' => '30.jpg',
@@ -140,7 +145,7 @@ class CuratedBySwis implements ProvidesImages
 
         return new Image(
             'url("' . asset('images/swisnl/filament-backgrounds/curated-by-swis/' . $image['url']) . '")',
-            array_key_exists('author', $image) ? __('Photo by :author', ['author' => $image['author']]) : null
+            __('Photo by :author', ['author' => $image['author']])
         );
     }
 }
