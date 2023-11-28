@@ -94,6 +94,20 @@ public function panel(Panel $panel): Panel
 }
 ```
 
+### Available image providers
+
+#### `Swis\Filament\Backgrounds\Images\CuratedBySwis`
+
+Default curated set of (free to use) images from [multiple sources](#license), based on the day of the month. You can find the images in the [resources/images/curated-by-swis](resources/images/curated-by-swis) directory.
+
+#### `Swis\Filament\Backgrounds\Images\MyImages`
+
+[Use your own images](#use-your-own-images).
+
+#### `Swis\Filament\Backgrounds\Images\Triangles`
+
+A set of low poly patterns created using [Trianglify](https://github.com/qrohlf/trianglify). You can find the patterns in the [resources/images/triangles](resources/images/triangles) directory.
+
 ### Writing a custom image provider
 
 To create your own image provider, you need to implement the `ProvidesImages` interface. This interface has one method, `getImage`, which should return an `Image` object. The image object takes two arguments, the first is the CSS `background-image` property, the second is the attribution text. The image will be directly used as background-image in CSS, so it should include `url()`, which allows you to even use gradients or other fancy stuff!
