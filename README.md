@@ -10,6 +10,12 @@
 
 A [curated list of (free to use) images](resources/images/curated-by-swis), to give your Filament auth pages a unique look. Rather use your own images? No problem, you can also use your own images. Or go wild and create your own image provider based on the weather, time of day, or whatever you can think of!
 
+<div class="filament-hidden">
+
+![Filament backgrounds screenshot](/art/screenshot.jpg)
+
+</div>
+
 ## Installation
 
 You can install the package via composer:
