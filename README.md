@@ -1,5 +1,7 @@
 # Filament backgrounds
 
+<div class="filament-hidden">
+
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/swisnl/filament-backgrounds.svg?style=flat-square)](https://packagist.org/packages/swisnl/filament-backgrounds)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Buy us a tree](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen.svg?style=flat-square)](https://plant.treeware.earth/swisnl/filament-backgrounds)
@@ -7,6 +9,8 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/swisnl/filament-backgrounds/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/swisnl/filament-backgrounds/actions?query=workflow%3A"Fix+PHP+Code+Styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/swisnl/filament-backgrounds.svg?style=flat-square)](https://packagist.org/packages/swisnl/filament-backgrounds)
 [![Made by SWIS](https://img.shields.io/badge/%F0%9F%9A%80-made%20by%20SWIS-%230737A9.svg?style=flat-square)](https://www.swis.nl)
+
+</div>
 
 A [curated list of (free to use) images](resources/images/curated-by-swis), to give your Filament auth pages a unique look. Rather use your own images? No problem, you can also use your own images. Or go wild and create your own image provider based on the weather, time of day, or whatever you can think of!
 
