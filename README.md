@@ -176,6 +176,6 @@ All images included in this package are free to use for commercial and noncommer
 * [PxHere](https://pxhere.com/)
 * [Unsplash](https://unsplash.com/)
 
-## SWIS :heart: Open Source
+## SWIS ❤️ Open Source
 
 [SWIS](https://www.swis.nl) is a web agency from Leiden, the Netherlands. We love working with open source software. 
