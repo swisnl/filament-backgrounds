@@ -78,7 +78,7 @@ class FilamentBackgroundsPlugin implements Plugin
 
         return array_filter([
             'filament-backgrounds-image' => new HtmlString($image->image),
-            'filament-backgrounds-attribution' => $this->showAttribution && $image->attribution ? new HtmlString('"' . e($image->attribution) . '"') : null,
+            'filament-backgrounds-attribution' => $this->showAttribution && $image->attribution ? new HtmlString('"' . addslashes($image->attribution) . '"') : null,
             'filament-backgrounds-attribution-backdrop' => $this->showAttribution && $image->attribution ? new HtmlString('""') : null,
         ]);
     }
