@@ -90,6 +90,7 @@ You can use your own images by passing an instance of `MyImages` to the `imagePr
 
 ```php
 use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
+use Swis\Filament\Backgrounds\ImageProviders\MyImages;
  
 public function panel(Panel $panel): Panel
 {
