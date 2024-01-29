@@ -2,7 +2,7 @@
 
 All notable changes to `swisnl/filament-backgrounds` will be documented in this file.
 
-## Unreleased
+## 1.1.2 - 2024-01-29
 
 ### Fixed
 
