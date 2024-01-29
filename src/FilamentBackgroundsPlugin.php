@@ -13,6 +13,8 @@ use Swis\Filament\Backgrounds\ImageProviders\CuratedBySwis;
 
 class FilamentBackgroundsPlugin implements Plugin
 {
+    protected Panel $panel;
+
     protected ProvidesImages $imageProvider;
 
     protected \DateInterval | \DateTimeInterface | int $ttl = 0;
@@ -39,7 +41,7 @@ class FilamentBackgroundsPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        //
+        $this->panel = $panel;
     }
 
     public function boot(Panel $panel): void
@@ -86,7 +88,7 @@ class FilamentBackgroundsPlugin implements Plugin
     protected function getImage(): Image
     {
         return Cache::remember(
-            'filament-backgrounds:image',
+            'filament-backgrounds:image:' . $this->panel->getId(),
             $this->ttl,
             fn () => ($this->imageProvider ?? CuratedBySwis::make())->getImage()
         );

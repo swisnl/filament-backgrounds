@@ -2,6 +2,12 @@
 
 All notable changes to `swisnl/filament-backgrounds` will be documented in this file.
 
+## Unreleased
+
+### Fixed
+
+* Use unique cache key per panel (#8).
+
 ## 1.1.1 - 2023-12-13
 
 ### Fixed
