@@ -5,26 +5,26 @@
     background-size: cover;
     position: relative;
     z-index: 0;
-}
 
-.fi-simple-layout::before {
-    background: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0) 25%) no-repeat;
-    background-size: cover;
-    content: var(--filament-backgrounds-attribution-backdrop);
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+    &::before {
+        background: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0) 25%) no-repeat;
+        background-size: cover;
+        content: var(--filament-backgrounds-attribution-backdrop);
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
 
-.fi-simple-layout::after {
-    bottom: 2rem;
-    color: white;
-    content: var(--filament-backgrounds-attribution);
-    left: 2rem;
-    position: absolute;
-    text-shadow: 0 0 3px black;
+    &::after {
+        bottom: 2rem;
+        color: white;
+        content: var(--filament-backgrounds-attribution);
+        left: 2rem;
+        position: absolute;
+        text-shadow: 0 0 3px black;
+    }
 }
 
 /* N.B. This selector has to be more specific for dark mode compatibility */
@@ -32,14 +32,13 @@
     position: relative;
     --tw-bg-opacity: 0.9;
     --tw-ring-color: transparent;
-}
 
-/* N.B. This selector has to be more specific for dark mode compatibility */
-.fi-simple-main.fi-simple-main.fi-simple-main::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    border-radius: inherit;
-    backdrop-filter: blur(3px);
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        border-radius: inherit;
+        backdrop-filter: blur(3px);
+    }
 }
