@@ -2,6 +2,12 @@
 
 All notable changes to `swisnl/filament-backgrounds` will be documented in this file.
 
+## 1.1.3 - 2024-02-09
+
+### Fixed
+
+* Fix CSS backdrop-filter containing box collision with Filament image editor (#10).
+
 ## 1.1.2 - 2024-01-29
 
 ### Fixed
