@@ -2,6 +2,12 @@
 
 All notable changes to `swisnl/filament-backgrounds` will be documented in this file.
 
+## 1.1.5 - 2025-02-25
+
+### Added
+
+* Add Laravel 12 support (#22).
+
 ## 1.1.4 - 2024-03-03
 
 ### Added
