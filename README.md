@@ -12,11 +12,11 @@
 
 </div>
 
-A [curated list of (free to use) images](resources/images/curated-by-swis), to give your Filament auth pages a unique look. Rather use your own images? No problem, you can also use your own images. Or go wild and create your own image provider based on the weather, time of day, or whatever you can think of!
+A [curated list of (free to use) images](https://github.com/swisnl/filament-backgrounds/tree/main/resources/images/curated-by-swis), to give your Filament auth pages a unique look. Rather use your own images? No problem, you can also use your own images. Or go wild and create your own image provider based on the weather, time of day, or whatever you can think of!
 
 <div class="filament-hidden">
 
-![Filament backgrounds screenshot](/art/screenshot.jpg)
+![Filament backgrounds screenshot](https://github.com/swisnl/filament-backgrounds/blob/main/art/screenshot.jpg)
 
 </div>
 
@@ -109,7 +109,7 @@ public function panel(Panel $panel): Panel
 
 #### `Swis\Filament\Backgrounds\Images\CuratedBySwis`
 
-Default curated set of (free to use) images from [multiple sources](#license), based on the day of the month. You can find the images in the [resources/images/curated-by-swis](resources/images/curated-by-swis) directory.
+Default curated set of (free to use) images from [multiple sources](#license), based on the day of the month. You can find the images in the [resources/images/curated-by-swis](https://github.com/swisnl/filament-backgrounds/tree/main/resources/images/curated-by-swis) directory.
 
 #### `Swis\Filament\Backgrounds\Images\MyImages`
 
@@ -117,7 +117,7 @@ Default curated set of (free to use) images from [multiple sources](#license), b
 
 #### `Swis\Filament\Backgrounds\Images\Triangles`
 
-A set of low poly patterns created using [Trianglify](https://github.com/qrohlf/trianglify). You can find the patterns in the [resources/images/triangles](resources/images/triangles) directory.
+A set of low poly patterns created using [Trianglify](https://github.com/qrohlf/trianglify). You can find the patterns in the [resources/images/triangles](https://github.com/swisnl/filament-backgrounds/tree/main/resources/images/triangles) directory.
 
 ### Writing a custom image provider
 
@@ -156,24 +156,24 @@ composer test
 
 ## Changelog
 
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+Please see [CHANGELOG](https://github.com/swisnl/filament-backgrounds/blob/main/CHANGELOG.md) for more information on what has changed recently.
 
 ## Contributing
 
-Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/swisnl/filament-backgrounds/blob/main/.github/CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
+Please review [our security policy](https://github.com/swisnl/filament-backgrounds/security/policy) on how to report security vulnerabilities.
 
 ## Credits
 
 - [Jasper Zonneveld](https://github.com/JaZo)
-- [All Contributors](../../contributors)
+- [All Contributors](https://github.com/swisnl/filament-backgrounds/contributors)
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/swisnl/filament-backgrounds/blob/main/LICENSE.md) for more information.
 
 All images included in this package are free to use for commercial and noncommercial purposes and come from multiple sources:
 * [Flickr](https://www.flickr.com/)
