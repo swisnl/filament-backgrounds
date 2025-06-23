@@ -2,36 +2,13 @@
 
 All notable changes to `swisnl/filament-backgrounds` will be documented in this file.
 
-## 1.2.0 - 2025-01-18
+## 1.2.0 - 2025-06-23
 
 ### Added
 
 * Add support for both Filament 3.x and 4.x in a single version.
 * Support for PHP 8.1 and 8.2.
 * Support for Laravel 10.21+ and 11.28+.
-
-### Changed
-
-* Expanded Filament compatibility from `^3.0` to `^3.0|^4.0`.
-* Expanded PHP compatibility to support both `^8.1|^8.2`.
-
-## 2.0.0 - 2025-01-18
-
-### Added
-
-* Add Filament 4 support.
-
-### Changed
-
-* **BREAKING**: Minimum PHP version is now 8.2.
-* **BREAKING**: Minimum Laravel version is now 11.28.
-* **BREAKING**: Minimum Filament version is now 4.0.
-
-### Removed
-
-* **BREAKING**: Dropped support for Filament 3.x.
-* **BREAKING**: Dropped support for PHP 8.1.
-* **BREAKING**: Dropped support for Laravel 10.x.
 
 ## 1.1.5 - 2025-02-25
 
