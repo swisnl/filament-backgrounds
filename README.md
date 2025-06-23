@@ -28,7 +28,7 @@ You can install the package via composer:
 composer require swisnl/filament-backgrounds
 ```
 
-> **Note**: Version 1.2.x supports both Filament 3.x and 4.x, making upgrades seamless. No code changes are required when moving between Filament versions.
+> **Note**: Version 1.2.x supports both Filament 3.x and 4.x.
 
 Next, publish the images if you want to use the default list:
 
