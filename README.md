@@ -25,15 +25,8 @@ A [curated list of (free to use) images](https://github.com/swisnl/filament-back
 | Plugin Version | Filament Version | PHP Version | Laravel Version |
 |----------------|------------------|-------------|-----------------|
 | 2.x            | 4.x              | 8.2+        | 11.28+          |
-| 1.x            | 3.x              | 8.1+        | 10.21+          |
-
-## Upgrading from v1 to v2
-
-The upgrade to v2 (Filament 4 compatibility) requires updating your dependencies:
-
-1. Update your `composer.json` to require version `^2.0`
-2. Run `composer update`
-3. No code changes are required - the plugin API remains the same
+| 1.2.x          | 3.x \| 4.x       | 8.1+ \| 8.2+ | 10.21+ \| 11.28+ |
+| 1.1.x          | 3.x              | 8.1+        | 10.21+          |
 
 ## Installation
 
@@ -42,6 +35,8 @@ You can install the package via composer:
 ```bash
 composer require swisnl/filament-backgrounds
 ```
+
+> **Note**: Version 1.2.x supports both Filament 3.x and 4.x, making upgrades seamless. No code changes are required when moving between Filament versions.
 
 Next, publish the images if you want to use the default list:
 
