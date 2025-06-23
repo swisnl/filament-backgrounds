@@ -6,7 +6,7 @@ All notable changes to `swisnl/filament-backgrounds` will be documented in this 
 
 ### Added
 
-* Add support for both Filament 3.x and 4.x in a single version.
+* Add support for Filament 4.x
 
 ## 1.1.5 - 2025-02-25
 
