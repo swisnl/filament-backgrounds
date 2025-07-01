@@ -27,11 +27,23 @@
     }
 }
 
-/* N.B. This selector has to be more specific for dark mode compatibility */
-.fi-simple-main.fi-simple-main.fi-simple-main {
+.fi-simple-main {
     position: relative;
-    --tw-bg-opacity: 0.9;
     --tw-ring-color: transparent;
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--color-white) 80%, transparent);
+    }
+
+    &:where(.dark, .dark *) {
+        background-color: rgb(24, 24, 27, 0.9);
+
+        @supports (color: color-mix(in lab, red, red)) {
+            background-color: color-mix(in oklab, var(--gray-900) 90%, transparent);
+        }
+    }
 
     &::before {
         content: '';

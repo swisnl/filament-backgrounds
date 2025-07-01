@@ -20,6 +20,13 @@ A [curated list of (free to use) images](https://github.com/swisnl/filament-back
 
 </div>
 
+## Version Compatibility
+
+| Plugin Version | Filament Version | PHP Version |
+|----------------|------------------|-------------|
+| 2.x            | 4.x              | 8.2+        |
+| 1.x            | 3.x              | 8.1+        |
+
 ## Installation
 
 You can install the package via composer:

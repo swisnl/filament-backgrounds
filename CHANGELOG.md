@@ -2,6 +2,17 @@
 
 All notable changes to `swisnl/filament-backgrounds` will be documented in this file.
 
+## 2.0.0 - Unreleased
+
+### Added
+
+* Add Filament 4 support (#26).
+
+### Removed
+
+* Remove Filament 3 support (#26).
+* Remove Laravel 10 support (#26).
+
 ## 1.1.5 - 2025-02-25
 
 ### Added
