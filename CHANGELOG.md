@@ -11,7 +11,7 @@ All notable changes to `swisnl/filament-backgrounds` will be documented in this 
 ### Changed
 
 * **BREAKING**: Minimum PHP version is now 8.2.
-* **BREAKING**: Minimum Laravel version is now 11.28.
+* **BREAKING**: Minimum Laravel version is now 11.0.
 * **BREAKING**: Minimum Filament version is now 4.0.
 
 ### Removed
