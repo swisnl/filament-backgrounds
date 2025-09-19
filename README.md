@@ -114,15 +114,15 @@ public function panel(Panel $panel): Panel
 
 ### Available image providers
 
-#### `Swis\Filament\Backgrounds\Images\CuratedBySwis`
+#### `Swis\Filament\Backgrounds\ImageProviders\CuratedBySwis`
 
 Default curated set of (free to use) images from [multiple sources](#license), based on the day of the month. You can find the images in the [resources/images/curated-by-swis](https://github.com/swisnl/filament-backgrounds/tree/main/resources/images/curated-by-swis) directory.
 
-#### `Swis\Filament\Backgrounds\Images\MyImages`
+#### `Swis\Filament\Backgrounds\ImageProviders\MyImages`
 
 [Use your own images](#use-your-own-images).
 
-#### `Swis\Filament\Backgrounds\Images\Triangles`
+#### `Swis\Filament\Backgrounds\ImageProviders\Triangles`
 
 A set of low poly patterns created using [Trianglify](https://github.com/qrohlf/trianglify). You can find the patterns in the [resources/images/triangles](https://github.com/swisnl/filament-backgrounds/tree/main/resources/images/triangles) directory.
 
