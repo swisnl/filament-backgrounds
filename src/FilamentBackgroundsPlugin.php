@@ -87,10 +87,16 @@ class FilamentBackgroundsPlugin implements Plugin
 
     protected function getImage(): Image
     {
+        $getImage = fn () => ($this->imageProvider ?? CuratedBySwis::make())->getImage();
+
+        if (! $this->ttl) {
+            return $getImage();
+        }
+
         return Cache::remember(
             'filament-backgrounds:image:' . $this->panel->getId(),
             $this->ttl,
-            fn () => ($this->imageProvider ?? CuratedBySwis::make())->getImage()
+            $getImage
         );
     }
 
