@@ -2,6 +2,24 @@
 
 All notable changes to `swisnl/filament-backgrounds` will be documented in this file.
 
+## 2.0.1 - 2025-11-12
+
+### What's Changed
+
+#### Fixed
+
+* Do not use cache when ttl is not configured by @JaZo in https://github.com/swisnl/filament-backgrounds/commit/08e2917a440243bb8eade4aea5ee7ea225137d10
+
+#### Docs
+
+* Fix Backgrounds\ImageProviders namespace by @trippo in https://github.com/swisnl/filament-backgrounds/pull/29
+
+### New Contributors
+
+* @trippo made their first contribution in https://github.com/swisnl/filament-backgrounds/pull/29
+
+**Full Changelog**: https://github.com/swisnl/filament-backgrounds/compare/2.0.0...2.0.1
+
 ## 2.0.0 - 2025-07-01
 
 ### Added
