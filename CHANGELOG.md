@@ -2,6 +2,14 @@
 
 All notable changes to `swisnl/filament-backgrounds` will be documented in this file.
 
+## 2.0.2 - 2026-01-20
+
+### Added
+
+* Add Filament 5 support.
+
+**Full Changelog**: https://github.com/swisnl/filament-backgrounds/compare/2.0.1...2.0.2
+
 ## 2.0.1 - 2025-11-12
 
 ### What's Changed
