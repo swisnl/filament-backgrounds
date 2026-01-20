@@ -24,7 +24,7 @@ A [curated list of (free to use) images](https://github.com/swisnl/filament-back
 
 | Plugin Version | Filament Version | PHP Version |
 |----------------|------------------|-------------|
-| 2.x            | 4.x              | 8.2+        |
+| 2.x            | 4.x,5.x          | 8.2+        |
 | 1.x            | 3.x              | 8.1+        |
 
 ## Installation
