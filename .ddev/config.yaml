@@ -3,7 +3,7 @@ type: php
 docroot: ""
 php_version: "8.3"
 webserver_type: generic
-xdebug_enabled: false
+xdebug_enabled: true
 additional_hostnames: []
 additional_fqdns: []
 database:
@@ -12,7 +12,8 @@ database:
 omit_containers: [db, ddev-ssh-agent]
 use_dns_when_possible: true
 composer_version: "2"
-web_environment: []
+web_environment:
+  - XDEBUG_MODE=coverage
 corepack_enable: false
 
 # Key features of DDEV's config.yaml:
